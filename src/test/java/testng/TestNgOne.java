@@ -42,17 +42,11 @@ public class TestNgOne {
         System.out.println("AestOne");
     }
 
-    @BeforeTest // Click And Read The Options
-    @BeforeClass // Click And Read The Options
-    @BeforeMethod // Click And Read The Options
-    @BeforeGroups // Click And Read The Options
-    @BeforeSuite // Click And Read The Options
     @BeforeTest // Click And Read Options
     @BeforeClass // Click And Read Options
     @BeforeMethod // Click And Read Options
     @BeforeGroups // Click And Read Options
     @BeforeSuite // Click And Read Options
-
     public void bTest(){
         System.out.println("bTest "+count++);
     }

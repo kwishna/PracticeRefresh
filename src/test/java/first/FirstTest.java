@@ -4,14 +4,6 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-
-public class FirstTest {
-
-	@Test
-	public void test_one() {
-		int method = 1 / 0;
-	}
-
 /**
  * Command Line : java org.testng.TestNG testng1.xml [testng2.xml testng3.xml ...]
  */
@@ -43,6 +35,7 @@ public class FirstTest {
 	public void testFour(){
 		System.out.println("-- Test qa --");
 	}
+
 
 	@BeforeTest
 	public void test_two() {
