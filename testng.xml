@@ -17,12 +17,12 @@
         </classes>
     </test>-->
 
-    <test name="Regression3">
+<!--    <test name="Regression3">
         <groups>
             <run>
                 <exclude name="smoke"  />
-                <include name="qa"  />
                 <include name="int"  />
+                <include name="qa"  />
             </run>
         </groups>
 
@@ -32,6 +32,16 @@
                     <exclude name="test_one"/>
                 </methods>
             </class>
+            <class name="testng.TestNGTwo"/>
+            <class name="testng.TestNgOne"/>
+        </classes>
+    </test>-->
+
+    <test name="Regression4">
+        <classes>
+            <class name="testng.TestNgOne"/>
+            <class name="first.FirstTest"/>
+            <class name="testng.TestNGTwo"/>
         </classes>
     </test>
     

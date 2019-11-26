@@ -1,23 +1,40 @@
 package first;
 
 public class Type {
-	
-	public static void main(String[] args) {
-		
-	}
 
-	public static <V extends Object> void hello(int notOfRows, DT t) {
+	private static <T> T hello(int notOfRows, DT t) {
 
 		switch (t) {
 
+			case STRING:
+				return (T) "Hello World";
 
+			case INT:
+				return (T) Integer.valueOf("1");
+
+			case DOUBLE:
+				return (T) Double.valueOf("2.0");
+
+			default: return null;
+
+		}
+	}
+
+		public static void main(String[] args) {
+
+			int i = hello(2, DT.INT);
+			System.out.println(i);
 		}
 
 	}
 
-}
+	enum DT {
 
-enum DT{
-
-	STRING;
+		STRING,
+		INT,
+		DOUBLE,
+		FLOAT,
+		EMAIL,
+		ALPHA,
+		SPECIAL;
 }
