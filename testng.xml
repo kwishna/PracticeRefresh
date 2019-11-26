@@ -1,4 +1,5 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
 <suite name="Suite1" verbose="1">
 <!-- mvn clean verify -P single -DdefaultTestngFile="testng.xml" -->
 <!--    <test name="Regression2" enabled="true" preserve-order="true">
