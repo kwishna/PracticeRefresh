@@ -121,6 +121,10 @@
                                 <exclude>**/*TestNgOne.java</exclude>
                             </excludes>
 
+                            <includes>
+                                <include></include>
+                            </includes>
+
                             <systemPropertyVariables>
                                 <browser>firefox</browser> <!-- @Parameter Replacement -->
                             </systemPropertyVariables>
