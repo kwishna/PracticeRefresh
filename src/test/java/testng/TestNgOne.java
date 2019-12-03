@@ -33,6 +33,7 @@ public class TestNgOne {
     }
 
     @Test
+    @Ignore
     public void TestOne(){
         System.out.println("1TestOne");
     }

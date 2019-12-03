@@ -29,7 +29,7 @@ public class TestNGMain {
                 "-testname", "Group Inheritance",
                 "-log", "10"
         });*/
-        
+
         TestNG ng = new TestNG();
 
     }
