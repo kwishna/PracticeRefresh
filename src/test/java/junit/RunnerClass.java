@@ -2,6 +2,7 @@ package junit;
 
 import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;
+import org.junit.runner.notification.Failure;
 
 public class RunnerClass {
 
@@ -10,7 +11,10 @@ public class RunnerClass {
         JUnitCore core = new JUnitCore();
         core.addListener(new CustomListeners());
         core.run(SuiTe.class);
-//        Result res = JUnitCore.runClasses(SuiTe.class);
+        Result res = JUnitCore.runClasses(SuiTe.class);
+        for(Failure r : res.getFailures()){
+            System.out.println(r.getDescription().getDisplayName());
+        }
 
     }
 
