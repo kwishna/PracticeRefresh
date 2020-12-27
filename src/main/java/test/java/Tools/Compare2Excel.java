@@ -1,4 +1,4 @@
-package Tools;
+package test.java.Tools;
 
 import com.google.common.collect.Sets;
 import org.apache.commons.io.FileUtils;

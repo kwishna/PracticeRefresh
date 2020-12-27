@@ -1,4 +1,4 @@
-package Tools;
+package test.java.Tools;
 
 import net.serenitybdd.core.Serenity;
 import org.openqa.selenium.By;
@@ -132,21 +132,14 @@ public class Selenium {
 
         locator = getValidLocator(locator);
 
-        if (locator.substring(0, 2).contains("//") || locator.substring(0, 2).contains("/")) {
-
-            return false;
-
-        } else {
-
-            return true;
-        }
+        return !locator.substring(0, 2).contains("//") && !locator.substring(0, 2).contains("/");
     }
 
     /** ------------------ Add Custom Text To Report For A Step --------------- */
 
     public static void addTextInReport(String message, String... title) {
 
-        if (title.length > 0 && title[0] != "") {
+        if (title.length > 0 && !title[0].equals("")) {
 
             Serenity.recordReportData().withTitle(title[0] + "_" + getTimeStamp()).andContents(message);
 

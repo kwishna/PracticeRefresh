@@ -1,4 +1,4 @@
-package Tools;
+package test.java.Tools;
 
 import org.apache.commons.io.FileDeleteStrategy;
 import org.apache.commons.io.FileUtils;

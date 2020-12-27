@@ -1,4 +1,4 @@
-package first;
+package test.java.first;
 
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;

@@ -1,4 +1,4 @@
-package junit;
+package test.java.junit;
 
 import org.junit.runner.Description;
 import org.junit.runner.Result;

@@ -1,4 +1,4 @@
-package first;
+package test.java.first;
 
 public class Type {
 

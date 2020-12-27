@@ -1,4 +1,4 @@
-package Tools;
+package test.java.Tools;
 
 import com.codoid.products.exception.FilloException;
 import com.codoid.products.fillo.Connection;
@@ -11,7 +11,7 @@ public class FillioLearn {
     public static void main(String[] args) throws FilloException {
 
         Fillo f = new Fillo();
-        Connection conn = f.getConnection("D:\\Users\\vfdpqa7\\Downloads\\All-Suites\\Local\\Practice\\TestDataNew.xlsx");
+        Connection conn = f.getConnection(System.getProperty("user.dir")+"\\TestDataNew.xlsx");
 //        DatabaseMetaData meta = conn.getMetaData();
 //        System.out.println(meta.getTableNames());
 

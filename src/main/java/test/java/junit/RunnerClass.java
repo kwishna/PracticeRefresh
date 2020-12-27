@@ -1,8 +1,9 @@
-package junit;
+package test.java.junit;
 
 import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;
 import org.junit.runner.notification.Failure;
+import test.java.junit.CustomListeners;
 
 public class RunnerClass {
 
