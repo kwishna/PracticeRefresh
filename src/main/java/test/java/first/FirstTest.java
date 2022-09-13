@@ -26,7 +26,7 @@ public class FirstTest {
 		System.out.println("-- Test int --");
 	}
 
-	@Test(groups = "prod")
+	@Test(groups = "prod2")
 	public void testThree(){
 		System.out.println("-- Test Prod --");
 	}
@@ -36,6 +36,10 @@ public class FirstTest {
 		System.out.println("-- Test qa --");
 	}
 
+	@Test(groups = "kkkkkkkk")
+	public void testFive(){
+		System.out.println("-- Test qa --");
+	}
 
 	@BeforeTest
 	public void test_two() {
